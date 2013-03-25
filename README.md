@@ -5,7 +5,11 @@ Perform selectors with delays inline via blocks
 
 Turns 
 
-	[self performSelector:@selector(selector) withObject:nil afterDelay:2];
+	[self performSelector:@selector(action) withObject:nil afterDelay:2];
+	
+	- (void)action {
+		// DO something
+	}
 	
 into a a block based call
 
